@@ -159,6 +159,7 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \
     /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
+    /system/vendor/lib64/lib-imsdpl.so|libshims_boringssl.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
