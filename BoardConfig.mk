@@ -62,6 +62,9 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8994
 TARGET_KERNEL_CONFIG := stealth_defconfig
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Audio
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
 AUDIO_FEATURE_ENABLED_COMPRESS_CAPTURE := true
