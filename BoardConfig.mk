@@ -186,5 +186,8 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # inherit from the proprietary version
 include vendor/oneplus/oneplus2/BoardConfigVendor.mk
