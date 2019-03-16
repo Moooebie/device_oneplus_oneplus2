@@ -53,6 +53,9 @@ persist.data.netmgrd.qos.enable=true
 persist.data.mode=concurrent
 ro.data.large_tcp_window_size=true
 
+# Display
+debug.cpurend.vsync=false
+
 # Dex2oat limits
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.dex2oat-threads=2
