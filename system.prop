@@ -31,6 +31,7 @@ vendor.qcom.bluetooth.soc=rome
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.HAL3.enabled=1
+vendor.camera.aux.packagelist=com.motorola.faceunlock
 
 # CEC
 ro.hdmi.device_type=4
