@@ -280,6 +280,11 @@ PRODUCT_PACKAGES += \
     init.tfa.sh \
     tinyplay
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
