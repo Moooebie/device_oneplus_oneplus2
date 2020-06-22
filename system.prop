@@ -151,3 +151,6 @@ persist.ims.disableADBLogs=1
 persist.ims.disableDebugLogs=1
 persist.ims.disableIMSLogs=1
 persist.ims.disableQXDMLogs=1
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
