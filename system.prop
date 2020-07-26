@@ -57,9 +57,14 @@ ro.data.large_tcp_window_size=true
 debug.cpurend.vsync=false
 
 # Dex2oat limits
-dalvik.vm.boot-dex2oat-threads=4
-dalvik.vm.dex2oat-threads=2
-dalvik.vm.image-dex2oat-threads=4
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
+dalvik.vm.image-dex2oat-filter=everything
+dalvik.vm.image-dex2oat-threads=8
 
 # Graphics
 debug.sf.disable_backpressure=1
