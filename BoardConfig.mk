@@ -50,6 +50,9 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
+# Prebuilt Kernel
+TARGET_PREBUILT_KERNEL := kernel/oneplus/kernel
+
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-3 loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -191,3 +194,6 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
 include vendor/oneplus/oneplus2/BoardConfigVendor.mk
+
+# Skip ELF check
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
